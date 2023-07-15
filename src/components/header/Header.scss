@@ -1,0 +1,131 @@
+.header {
+	.header__nav {
+		.header__nav__list {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			li {
+				cursor: pointer;
+			}
+			li:nth-child(odd) {
+				border: none;
+				border-left: 1px solid #c4c4c4;
+				height: 80px;
+			}
+			.header__nav__list__number {
+				a {
+					color: #000;
+					font-weight: 500;
+				}
+			}
+			.header__nav__list__salon {
+				display: flex;
+				align-items: center;
+				gap: 15px;
+			}
+			.header__nav__list__yey {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				background: #00868a;
+				padding: 8px 15px;
+				p {
+					color: #fff;
+					text-transform: uppercase;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	.header__main {
+		background-color: #4fbfa5;
+		.header__main__inside {
+			.header__main__inside__list {
+				padding: 30px 0;
+				display: flex;
+				justify-content: end;
+				gap: 65px;
+				align-items: center;
+				color: #fff;
+				font-size: 18px;
+				font-weight: 500;
+				li:last-child {
+					padding: 9px 15px;
+					background-color: #fff;
+					color: #000;
+					margin-left: 35px;
+				}
+				li {
+					cursor: pointer;
+				}
+			}
+			.header__main__inside__cosmetology {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-bottom: -4px;
+				.header__main__inside__cosmetology__left {
+					.header__main__inside__cosmetology__left__text {
+						h1 {
+							font-size: 48px;
+							font-weight: 700;
+							color: #fff;
+						}
+						p {
+							font-size: 14px;
+							font-weight: 500;
+							color: #fff;
+							width: 380px;
+							margin: 20px 0 40px;
+						}
+						button {
+							font-size: 18px;
+							font-weight: 500;
+							color: #fff;
+							letter-spacing: 0.9px;
+							padding: 15px 25px;
+							background-color: #00868a;
+							text-transform: uppercase;
+						}
+					}
+					.header__main__inside__cosmetology__left__arrow {
+						display: flex;
+						justify-content: end;
+						align-items: center;
+						margin-top: 24px;
+						// margin-right: -65px;
+						button {
+							background: none;
+							padding: 15px 25px;
+							border: 1px solid #fff;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+						}
+						button:first-child {
+							border-right: none;
+						}
+					}
+				}
+				.header__main__inside__cosmetology__right {
+					img {
+						width: 100%;
+					}
+				}
+			}
+			.header__main__inside__bottom {
+				display: grid;
+				grid-template-columns: 2fr 1fr 1fr;
+				li {
+					text-align: center;
+					color: #fff;
+					padding: 24px 0;
+					background-color: #00868a;
+				}
+				.activeLI {
+					background-color: #4fbfa5;
+				}
+			}
+		}
+	}
+}
